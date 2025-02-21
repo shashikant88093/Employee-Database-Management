@@ -1,0 +1,34 @@
+body{
+    align-items: center;
+}
+
+:root{
+    --btn : #dbdbdb;
+    --btn-hover:#cacaca;
+    --item-bg:#f0f0f0;
+    --modal-bg:rgba(141,141,141,0.541);
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header > button{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background:var(--btn);
+    cursor: pointer;
+
+}
+.header > button:hover{
+    background-color: var(--btn-hover);
+}
+
+
+.popup{
+    display: none;
+}
+
+

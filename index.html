@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Database Management</title>
+    <!-- <script type="module"></script> -->
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            Employee Database Management
+        </h1>
+        <button type="submit" id="newUser" >Add Employee</button>
+    </div>
+    <div class="employees">
+        <div class="employee_names">
+            <span class="employee_names_title">Employee List</span>
+            <div class="employee_names_list"></div>
+
+        </div>
+        <div class="single">
+            <span class="employee_single_title">Employee Information</span>
+            <div class="employee_single_list"></div>
+
+        </div>
+    </div>
+    </div>
+    <div class="popup">
+        <h4>Add a new Employee</h4>
+        <fieldset >
+        <input class="First Name" placeholder="First Name"/>
+        <input class="Last Name"placeholder="Last Name"/>
+        <input placeholder="Image URL (Optional)"/>
+        <input placeholder="Email"/>
+        <input placeholder="Contact"/>
+        <input placeholder="Salary"/>
+        <input placeholder="Address"/>
+        <input placeholder="mm/dd/yyyy" type="date"/>
+        <button id="Add" type="submit">Add</button>
+    </fieldset>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
