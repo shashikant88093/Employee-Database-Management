@@ -16,11 +16,15 @@
         popup.style.display = "flex";
     });
 
+
+
     // Set Employee age to be entered minimum 18 years
     const dobInput = document.querySelector(".addEmployee_create--dob");
     dobInput.max = `${new Date().getFullYear() - 18}-${new Date()
         .toISOString()
         .slice(5, 10)}`;
+
+
 
     addEmployeeForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -41,6 +45,9 @@
         popup.style.display = "none";
     });
 
+
+
+
     // Delete Employee Logic
     const handleDeleteEmployee = (e) => {
         if (e.target.classList.contains("employeeDelete")) {
@@ -60,6 +67,9 @@
 
     employeeList.addEventListener("click", handleDeleteEmployee); // Add event listener to employee list
 
+
+
+
     // Render All Employees Logic - START
     const renderEmployees = () => {
         employeeList.innerHTML = "";
@@ -75,6 +85,9 @@
             employeeList.append(employee);
         });
     };
+
+
+
 
     // Render Single Employee Logic - START
     const renderSingleEmployee = () => {
@@ -96,6 +109,8 @@
     };
     // Render Single Employee Logic - END
 
+
+    
     renderEmployees();
     if (selectedEmployee) renderSingleEmployee();
 })();
