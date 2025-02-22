@@ -16,16 +16,16 @@
         <h1>
             Employee Database Management
         </h1>
-        <button type="submit" id="newUser" >Add Employee</button>
+        <button type="submit" class="newUser">Add Employee</button>
     </div>
     <div class="employees">
         <div class="employee_names">
-            <span class="employee_names_title">Employee List</span>
+            <p class="employee_names_title">Employee List</p>
             <div class="employee_names_list"></div>
 
         </div>
         <div class="single">
-            <span class="employee_single_title">Employee Information</span>
+            <p class="employee_single_title">Employee Information</p>
             <div class="employee_single_list"></div>
 
         </div>
@@ -33,17 +33,23 @@
     </div>
     <div class="popup">
         <h4>Add a new Employee</h4>
-        <fieldset >
-        <input class="First Name" placeholder="First Name"/>
-        <input class="Last Name"placeholder="Last Name"/>
-        <input placeholder="Image URL (Optional)"/>
-        <input placeholder="Email"/>
-        <input placeholder="Contact"/>
-        <input placeholder="Salary"/>
-        <input placeholder="Address"/>
-        <input placeholder="mm/dd/yyyy" type="date"/>
-        <button id="Add" type="submit">Add</button>
-    </fieldset>
+        <form class="create_form">
+            <!-- <fieldset> -->
+            <div class="UserName">
+                <input type="text" name="firstName" placeholder="First Name" />
+                <input  type="text" name="lastName" placeholder="Last Name" />
+            </div>
+            <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="number" name="phone" placeholder="Contact" />
+            <input type="text" name="address" placeholder="Address" />
+            <input placeholder="Date Of Birth"  class="addEmployee_create--dob" type="date" name="date" value="submit"/>
+            <div class="action-button">
+                <button id="Add" type="submit">Add</button>
+                <button id="cancel" type="submit">Cancel</button>
+            </div>
+            <!-- </fieldset> -->
+        </form>
     </div>
     <script type="module" src="./js/index.js"></script>
 </body>
